@@ -49,7 +49,7 @@ jobs:
         run: npm install jshint --global
 
       - name: Create JSHint config
-        run: printf '{"esversion":6}' > .jshintrc
+        run: printf '{"esversion":8,"sub":true,"asi":true}' > .jshintrc
 
       - name: Run Linter
         run: |
